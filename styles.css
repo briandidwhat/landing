@@ -31,7 +31,7 @@ body {
 
 .mainframe {
     z-index: 1;
-    margin-top:1em;
+    margin-top:0.6vh;
     margin-bottom:3em;
     padding-top:2em;
     text-align:center;
@@ -45,7 +45,7 @@ body {
     -webkit-border-radius:50%;
     box-shadow: 0.1em 0.1em 1em 0.01em rgba(60,60,60, 0.3);
     transition: 0.3s ease-in-out;
-    margin-bottom:0.8vh;
+    margin-bottom:0.6vh;
 }
 
 .avi:hover {
@@ -127,7 +127,7 @@ h1 span:hover {
     list-style-type: none;
     padding: 0em;
     margin: 0 auto;
-    margin-top: 4.5vh;
+    margin-top: 3.8vh;
 }
 
 .socialicons li {
