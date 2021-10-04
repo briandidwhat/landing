@@ -52,11 +52,11 @@ body {
 .musiccover:hover {
     filter:brightness(70%);
     filter:contrast(120%);
-    opacity:0.8;
+    opacity:0.85;
 }
 
 .musiccover:hover img {
-    transform: scale(1.03);
+    transform: scale(1.02);
     transition-duration:0.2s;
 }
 
@@ -71,6 +71,11 @@ body {
     overflow:hidden;
     background-color:rgba(15, 15, 15, 0.9);
     box-shadow: inset 0.1em 0.1em 1em 0.5em rgba(10,10,10,0.5);
+    transition:0.3s ease-in-out;
+}
+
+.song:hover {
+    background-color:rgba(12, 12, 12, 0.83);
 }
 
 .songtitle {
