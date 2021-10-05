@@ -10,8 +10,8 @@
             left: 0;
             background-color: #dbdbdb;
             opacity: 0.98;
-            -webkit-transition: opacity 1500ms ease-in;
-            transition: opacity 1500ms ease-in;
+            -webkit-transition: opacity 1000ms ease-in;
+            transition: opacity 1000ms ease-in;
             z-index:10;
         }
         
@@ -28,8 +28,8 @@
             border-top: 16px solid #808080;
             -webkit-animation: spin 2s linear infinite;
             animation: spin 2s linear infinite;
-            -webkit-transition: opacity 1000ms ease-in;
-            transition: opacity 1000ms ease-in;
+            -webkit-transition: opacity 600ms ease-in;
+            transition: opacity 600ms ease-in;
         }
         
         @keyframes spin {
@@ -99,11 +99,11 @@
 
             setTimeout(function() {
                 elem2.parentNode.removeChild(elem2);
-            }, 1000);
+            }, 600);
 
             setTimeout(function() {
                 elem.parentNode.removeChild(elem);
-            }, 1500);
+            }, 1000);
         });
     </script>
 </body>
