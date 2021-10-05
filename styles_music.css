@@ -69,13 +69,15 @@ body {
     padding:0;
     padding-top:0.4vh;
     margin:0.5em;
+    margin-bottom:0.4em;
     color:white;
+    letter-spacing: 0.18em;
 }
 
 .artist {
     font-family:Arial;
-    letter-spacing: 0.25em;
-    font-size:1.4vh;
+    letter-spacing: 0.23em;
+    font-size:1.6vh;
     font-weight:300;
     color:white;
     padding:0;
