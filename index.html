@@ -2,7 +2,6 @@
 <head>
     <title>notbrian</title>
     <link rel="preload" href="styles_main.css" as="style" onload="this.rel='stylesheet'">    
-    <link rel="preload" href="background_img.png" as="image"  type="image/png">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +9,9 @@
 </head>
 <div class="bg"></div>
 <body>
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+    </div>
     <div class="mainframe">
         <img class="avi" src="avi_notbrian.png">
         <h1><span>notbrian</span></h1>
@@ -27,5 +29,22 @@
         </ul>
         <p class="footer">© 2021 Brian DeSousa. All rights reserved.</p>
     </div>
+    <script>
+        window.addEventListener('load', function () {
+            var elem = document.getElementById('loader-wrapper');
+            var elem2 = document.getElementById('loader');
+
+            elem.style.opacity = '0';
+            elem2.style.opacity = '0';
+
+            setTimeout(function() {
+                elem2.parentNode.removeChild(elem2);
+            }, 1000);
+
+            setTimeout(function() {
+                elem.parentNode.removeChild(elem);
+            }, 1500);
+        });
+    </script>
 </body>
 </html>
