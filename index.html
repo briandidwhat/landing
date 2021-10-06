@@ -86,23 +86,6 @@
 </head>
 <div class="bg"></div>
 <body>
-    <script>
-        function spotifyClick () {
-            fbq('track', 'Spotify');
-        }
-
-        function applemusicClick () {
-            fbq('track', 'Apple Music');
-        }
-
-        function bandcampClick () {
-            fbq('track', 'Bandcamp');
-        }
-
-        function soundcloudClick () {
-            fbq('track', 'SoundCloud');
-        }
-    </script>
     <div id="loader-wrapper">
         <div id="loader"></div>
     </div>
@@ -122,6 +105,33 @@
         </ul>
         <p class="footer">© 2021 Brian DeSousa. All rights reserved.</p>
     </div>
+    <script>
+
+        function spotifyClick () {
+            fbq('track', 'Spotify');
+        }
+
+        document.getElementById('spotify').addEventListener("click", spotifyClick(), false);
+
+        function applemusicClick () {
+            fbq('track', 'Apple Music');
+        }
+
+        document.getElementById('apple_music').addEventListener("click", applemusicClick(), false);
+
+        function bandcampClick () {
+            fbq('track', 'Bandcamp');
+        }
+
+        document.getElementById('bandcamp').addEventListener("click", bandcampClick(), false);
+
+        function soundcloudClick () {
+            fbq('track', 'SoundCloud');
+        }
+
+        document.getElementById('soundcloud').addEventListener("click", soundcloudClick(), false);
+        
+    </script>
     <script>
         window.addEventListener('load', function () {
             var elem = document.getElementById('loader-wrapper');
