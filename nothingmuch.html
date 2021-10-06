@@ -14,7 +14,6 @@
             transition: opacity 1000ms ease-in;
             z-index:10;
         }
-        
         #loader {
             position: fixed;
             left: 50%;
@@ -31,20 +30,16 @@
             -webkit-transition: opacity 600ms ease-in;
             transition: opacity 600ms ease-in;
         }
-        
         @keyframes spin {
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
-        
         .no-js #loader-wrapper {
             display:none;
         }
-        
         .no-js #loader {
             display:none;
         }
-        
         .bg {
             width:100%;
             height:100%;
@@ -109,14 +104,11 @@
         window.addEventListener('load', function () {
             var elem = document.getElementById('loader-wrapper');
             var elem2 = document.getElementById('loader');
-
             elem.style.opacity = '0';
             elem2.style.opacity = '0';
-
             setTimeout(function() {
                 elem2.parentNode.removeChild(elem2);
             }, 600);
-
             setTimeout(function() {
                 elem.parentNode.removeChild(elem);
             }, 1000);
@@ -126,11 +118,9 @@
         function spotifyClick () {
             fbq('trackCustom', 'Spotify');
         }
-
         function applemusicClick () {
             fbq('trackCustom', 'Apple Music');
         }
-
         function bandcampClick () {
             fbq('trackCustom', 'Bandcamp');
         }
