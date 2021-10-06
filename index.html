@@ -1,23 +1,6 @@
 <html lang="en">
 <head>
     <title>notbrian</title>
-    <!-- Facebook Pixel Code -->
-    <script>
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '1842300899286706');
-        fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-        src="https://www.facebook.com/tr?id=1842300899286706&ev=PageView&noscript=1"/>
-    </noscript>
-    <!-- End Facebook Pixel Code -->
     <style>
         #loader-wrapper {
             width: 100%;
@@ -86,23 +69,6 @@
 </head>
 <div class="bg"></div>
 <body>
-    <script>
-        function spotifyClick () {
-            fbq('trackCustom', 'Spotify');
-        }
-
-        function applemusicClick () {
-            fbq('trackCustom', 'Apple Music');
-        }
-
-        function bandcampClick () {
-            fbq('trackCustom', 'Bandcamp');
-        }
-
-        function soundcloudClick () {
-            fbq('trackCustom', 'SoundCloud');
-        }
-    </script>
     <div id="loader-wrapper">
         <div id="loader"></div>
     </div>
@@ -138,6 +104,42 @@
                 elem.parentNode.removeChild(elem);
             }, 1000);
         });
+    </script>
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1842300899286706');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=1842300899286706&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+
+    <script>
+        function spotifyClick () {
+            fbq('trackCustom', 'Spotify');
+        }
+
+        function applemusicClick () {
+            fbq('trackCustom', 'Apple Music');
+        }
+
+        function bandcampClick () {
+            fbq('trackCustom', 'Bandcamp');
+        }
+
+        function soundcloudClick () {
+            fbq('trackCustom', 'SoundCloud');
+        }
     </script>
 </body>
 </html>
