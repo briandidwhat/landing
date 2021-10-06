@@ -1,23 +1,6 @@
 <html lang="en">
 <head>
     <title>Nothing Much</title>
-    <!-- Facebook Pixel Code -->
-    <script>
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '1842300899286706');
-        fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-        src="https://www.facebook.com/tr?id=1842300899286706&ev=PageView&noscript=1"/>
-    </noscript>
-    <!-- End Facebook Pixel Code -->
     <style>
         #loader-wrapper {
             width: 100%;
@@ -83,6 +66,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="nothingmuch_cover.ico"/>
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1842300899286706');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=1842300899286706&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
 </head>
 <div class="bg"></div>
 <body>
@@ -98,9 +98,9 @@
                 <p class="artist">notbrian</p>
             </div>
             <ul class="verticallinks">
-                <li><a href="https://open.spotify.com/album/0J3b9reUeuVDY7movQpt83?si=XjmwksOZTHmeF_GjerORwg" target="_blank"><img class="a" src="spotify.png" style="width:9em;margin:0;margin-top:0.65em;"></a></li>
-                <li><a href="https://music.apple.com/us/album/nothing-much-single/1581347079" target="_blank"><img class="a" src="apple-music.png" style="width:9em;margin-top:0.75em;"></a></li>
-                <li><a href="https://notbrian.bandcamp.com/album/nothing-much" target="_blank"><img class="a" src="bandcamp.png" style="width:9em;margin-top:1.2em;"></a></li>
+                <li><a onclick="spotifyClick()" href="https://open.spotify.com/album/0J3b9reUeuVDY7movQpt83?si=XjmwksOZTHmeF_GjerORwg" target="_blank"><img class="a" src="spotify.png" style="width:9em;margin:0;margin-top:0.65em;"></a></li>
+                <li><a onclick="applemusicClick()" href="https://music.apple.com/us/album/nothing-much-single/1581347079" target="_blank"><img class="a" src="apple-music.png" style="width:9em;margin-top:0.75em;"></a></li>
+                <li><a onclick="bandcampClick()" href="https://notbrian.bandcamp.com/album/nothing-much" target="_blank"><img class="a" src="bandcamp.png" style="width:9em;margin-top:1.2em;"></a></li>
             </ul>
         </div>
         <p class="footer">© 2021 Brian DeSousa. All rights reserved.</p>
@@ -121,6 +121,19 @@
                 elem.parentNode.removeChild(elem);
             }, 1000);
         });
+    </script>
+    <script>
+        function spotifyClick () {
+            fbq('trackCustom', 'Spotify');
+        }
+
+        function applemusicClick () {
+            fbq('trackCustom', 'Apple Music');
+        }
+
+        function bandcampClick () {
+            fbq('trackCustom', 'Bandcamp');
+        }
     </script>
 </body>
 </html>
