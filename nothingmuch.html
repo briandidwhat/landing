@@ -116,13 +116,19 @@
     </script>
     <script>
         function spotifyClick () {
-            fbq('trackCustom', 'Spotify Click', {page: 'nothingmuch'});
+            fbq('track', 'ViewContent', {
+                content-ids: ['Spotify'], 
+                content-type: 'product'});
         }
         function applemusicClick () {
-            fbq('trackCustom', 'Apple Music Click', {page: 'nothingmuch'});
+            fbq('track', 'ViewContent', {
+                content-ids: ['Apple Music'], 
+                content-type: 'product'});
         }
         function bandcampClick () {
-            fbq('trackCustom', 'Bandcamp Click', {page: 'nothingmuch'});
+            fbq('track', 'ViewContent', {
+                content-ids: ['BandCamp'], 
+                content-type: 'product'});
         }
     </script>
 </body>

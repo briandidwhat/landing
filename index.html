@@ -116,25 +116,39 @@
     </script>
     <script>
         function spotifyClick () {
-            fbq('trackCustom', 'Spotify Click', {page: 'Home'});
+            fbq('track', 'ViewContent', {
+                content-ids: ['Spotify'], 
+                content-type: 'product'});
         }
         function applemusicClick () {
-            fbq('trackCustom', 'Apple Music Click', {page: 'Home'});
+            fbq('track', 'ViewContent', {
+                content-ids: ['Apple Music'], 
+                content-type: 'product'});
         }
         function bandcampClick () {
-            fbq('trackCustom', 'Bandcamp Click', {page: 'Home'});
+            fbq('track', 'ViewContent', {
+                content-ids: ['BandCamp'], 
+                content-type: 'product'});
         }
         function soundcloudClick () {
-            fbq('trackCustom', 'SoundCloud Click', {page: 'Home'});
+            fbq('track', 'ViewContent', {
+                content-ids: ['SoundCloud'], 
+                content-type: 'product'});
         }
         function instagramClick () {
-            fbq('trackCustom', 'Instagram Click', {page: 'Home'});
+            fbq('track', 'ViewContent', {
+                content-ids: ['Instagram'], 
+                content-type: 'product'});
         }
         function twitterClick () {
-            fbq('trackCustom', 'Twitter Click', {page: 'Home'});
+            fbq('track', 'ViewContent', {
+                content-ids: ['Twitter'], 
+                content-type: 'product'});
         }
         function youtubeClick () {
-            fbq('trackCustom', 'Youtube Click', {page: 'Home'});
+            fbq('track', 'ViewContent', {
+                content-ids: ['Youtube'], 
+                content-type: 'product'});
         }
     </script>
 </body>
