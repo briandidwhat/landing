@@ -48,42 +48,6 @@ body {
     width:100%;
 }
 
-.song {
-    padding:0;
-    margin:0;
-    height:7.3vh;
-    overflow:hidden;
-    background-color:rgba(15, 15, 15, 0.9);
-    box-shadow: inset 0.1em 0.1em 1em 0.5em rgba(10,10,10,0.5);
-    transition:0.3s ease-in-out;
-}
-
-.song:hover {
-    background-color:rgba(12, 12, 12, 0.83);
-}
-
-.songtitle {
-    font-family:Helvetica, Arial, sans-serif;
-    font-size: 1.7vh;
-    font-weight:600;
-    padding:0;
-    padding-top:0.4vh;
-    margin:0.5em;
-    margin-bottom:0.4em;
-    color:white;
-    letter-spacing: 0.18em;
-}
-
-.artist {
-    font-family:Arial;
-    letter-spacing: 0.23em;
-    font-size:1.6vh;
-    font-weight:300;
-    color:white;
-    padding:0;
-    margin:0;
-}
-
 .verticallinks {
     display:table;
     list-style-type: none;
