@@ -46,7 +46,7 @@ body {
 
 #music {
     width:100%;
-    min-height:10vh;
+    min-height:30vh;
     background-color:rgb(37, 37, 37);
 }
 
@@ -148,12 +148,12 @@ body {
 }
 
 .footer {
-    color: rgb(26, 26, 26);
+    color: #747879;
     position:fixed;
     bottom: 0;
     left: 0;
     right: 0;
-    opacity:0.15;
+    opacity:0.5;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size:1.6vh;
     font-weight:600;
