@@ -80,7 +80,17 @@
                 <h1 class="songtitle">Nothing Much</h1>
                 <p class="artist">notbrian</p>
             </div>
-            <script src="event_scripts.js"></script>
+            <script>                
+                function spotifyClick() {
+                    fbq('track', 'ViewContent', {content_ids: ['Spotify'], content_type: 'product'});
+                }
+                function applemusicClick() {
+                    fbq('track', 'ViewContent', {content_ids: ['Apple Music'], content_type: 'product'});
+                }
+                function bandcampClick() {
+                    fbq('track', 'ViewContent', {content_ids: ['BandCamp'], content_type: 'product'});
+                }
+            </script>
             <ul class="verticallinks">
                 <li><a onclick="spotifyClick()" href="https://open.spotify.com/album/0J3b9reUeuVDY7movQpt83?si=XjmwksOZTHmeF_GjerORwg" target="_blank"><img class="a" src="spotify.webp" style="width:9em;margin:0;margin-top:0.65em;"></a></li>
                 <li><a onclick="applemusicClick()" href="https://music.apple.com/us/album/nothing-much-single/1581347079" target="_blank"><img class="a" src="apple-music.webp" style="width:9em;margin-top:0.75em;"></a></li>
