@@ -46,7 +46,7 @@ body {
 
 #music {
     width:100%;
-    min-height:30vh;
+    min-height:35vh;
     background-color:rgb(37, 37, 37);
 }
 
@@ -145,20 +145,6 @@ body {
 .socialicons:hover li:not(:hover) a {
     filter: blur(0.08em);
     opacity:0.6;
-}
-
-.footer {
-    color: #747879;
-    position:fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    opacity:0.5;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size:1.6vh;
-    font-weight:600;
-    letter-spacing: 0.04em;
-    transition: 0.3s ease-in-out;
 }
 
 .footer:hover {
