@@ -31,6 +31,7 @@ body {
 .musiccover {
     transition: 0.3s ease-in-out;
     padding:0;
+    background-color:rgb(37, 37, 37)
 }
 
 .musiccover:hover {
@@ -46,6 +47,7 @@ body {
 
 #music {
     width:100%;
+    min-height:20em;
 }
 
 .verticallinks {
