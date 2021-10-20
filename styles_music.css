@@ -1,7 +1,6 @@
 html {
     height:100%;
     width:100%;
-    box-shadow: inset 0em 2em 2em 2em rgba(10,10,10,0.7);
 }
 
 body {
@@ -17,12 +16,12 @@ body {
     z-index: 1;
     margin-top:0.3vh;
     margin-bottom:3em;
-    padding-top:1.3vh;
+    padding-top:6vh;
     text-align:center;
 }
 
 .box {
-    box-shadow: 0.3em 0.8em 2em 0.0001em rgba(47,47,47,0.75);
+    box-shadow: 0.3em 0.8em 2em 0.0001em rgba(0, 0, 0, 0.5);
     width: 43vh;
     margin: 0 auto;
     padding:0;
@@ -70,16 +69,24 @@ body {
     display: block;
     color: white;
     text-decoration: none;
-    background-color:rgb(38, 38, 38);
+    background-color:rgb(34, 34, 34);
     letter-spacing: 0.2em;
     font-weight: bold;
     height:4em;
     transition: 0.25s ease-out;
+    position:relative;
 }
 
 .verticallinks li a .a {
     vertical-align:middle;
-    z-index:5;
+    z-index:1;
+    position:absolute;
+    margin:auto;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:9em;
 }
 
 .verticallinks li:hover a {
@@ -148,5 +155,5 @@ body {
 }
 
 .footer:hover {
-    opacity:0.3;
+    opacity:0.17;
 }

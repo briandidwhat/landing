@@ -1,4 +1,3 @@
-
 function spotifyClick() {
     fbq('track', 'ViewContent', {content_ids: ['Spotify'], content_type: 'product'});
 }

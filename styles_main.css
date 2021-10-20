@@ -1,7 +1,6 @@
 html {
     height:100%;
     width:100%;
-    box-shadow: inset 0em 2em 2em 2em rgba(10,10,10,0.7);
 }
 
 body {
@@ -13,7 +12,7 @@ body {
 
 .mainframe {
     z-index: 1;
-    margin-top:0.6vh;
+    margin-top:3vh;
     margin-bottom:3em;
     padding-top:2em;
     text-align:center;
@@ -25,13 +24,13 @@ body {
     border-radius:50%;
     -moz-border-radius:50%;
     -webkit-border-radius:50%;
-    box-shadow: 0.1em 0.1em 1em 0.01em rgba(60,60,60, 0.3);
+    box-shadow: 0.1em 0.1em 1em 0.01em rgba(0, 0, 0, 0.3);
     transition: 0.3s ease-in-out;
     margin-bottom:0.6vh;
 }
 
 .avi:hover {
-    box-shadow: 0.1em 0.1em 1.7em 0.03em rgba(80,80,80,0.4);
+    box-shadow: 0.1em 0.1em 1.7em 0.03em rgba(0, 0, 0, 0.3);
 }
 
 h1 span:hover {
@@ -43,14 +42,14 @@ h1 span:hover {
     list-style-type: none;
     margin: 0 auto;
     padding: 0em;
-    background-color:rgba(18,18,18,0.9);
-    box-shadow: 0.3em 0.8em 2em 0.0001em rgba(47,47,47,0.75);
-    width: 45vmax;
+    background-color:rgba(15,15,15,0.9);
+    box-shadow: 0.3em 0.8em 2em 0.0001em rgba(0, 0, 0, 0.5);
+    width: 95vmin;
 }
 
 .verticallinks li {
     padding:0em;
-    padding-bottom:0.2em;
+    padding-top:0;
 }
 
 .verticallinks li a {
@@ -58,21 +57,44 @@ h1 span:hover {
     display: block;
     color: white;
     text-decoration: none;
-    background-color:rgb(38, 38, 38);
+    background-color:rgb(34, 34, 34);
     letter-spacing: 0.2em;
     font-weight: bold;
     height:4em;
     transition: 0.25s ease-out;
+    position:relative;
+    margin:auto;
+    width:100%;
 }
+
 
 .verticallinks li a .a {
     vertical-align:middle;
     z-index:1;
+    position:absolute;
+    margin:auto;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:9em;
+}
+
+
+.verticallinks li a iframe {
+    vertical-align:middle;
+    position:absolute;
+    margin:auto 0 auto auto;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index:1000;
 }
 
 .verticallinks li:hover a {
     background-color:rgba(25, 25, 25, 0.5);
-    box-shadow: 0.1em 0.1em 1em 0.01em rgba(10,10,10,0.2);
+    box-shadow: 0.1em 0.1em 1em 0.01em rgba(0, 0, 0, 0.2);
 }
 
 .verticallinks li:active a {
@@ -136,5 +158,5 @@ h1 span:hover {
 }
 
 .footer:hover {
-    opacity:0.3;
+    opacity:0.17;
 }
