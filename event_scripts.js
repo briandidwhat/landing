@@ -7,9 +7,6 @@ function applemusicClick() {
 function bandcampClick() {
     fbq('track', 'ViewContent', {content_ids: ['BandCamp'], content_type: 'product'});
 }
-function soundcloudClick() {
-    fbq('track', 'ViewContent', {content_ids: ['SoundCloud'], content_type: 'product'});
-}
 function instagramClick() {
     fbq('track', 'ViewContent', {content_ids: ['Instagram'], content_type: 'product'});
 }
