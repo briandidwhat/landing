@@ -4,6 +4,12 @@ function spotifyClick() {
 function applemusicClick() {
     fbq('track', 'ViewContent', {content_ids: ['Apple Music'], content_type: 'product'});
 }
+function youtubeMusicClick() {
+    fbq('track', 'ViewContent', {content_ids: ['Youtube Music'], content_type: 'product'});
+}
+function tialClick() {
+    fbq('track', 'ViewContent', {content_ids: ['Tidal'], content_type: 'product'});
+}
 function bandcampClick() {
     fbq('track', 'ViewContent', {content_ids: ['BandCamp'], content_type: 'product'});
 }
