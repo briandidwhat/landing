@@ -7,7 +7,7 @@ function applemusicClick() {
 function youtubeMusicClick() {
     fbq('track', 'ViewContent', {content_ids: ['Youtube Music'], content_type: 'product'});
 }
-function tialClick() {
+function tidalClick() {
     fbq('track', 'ViewContent', {content_ids: ['Tidal'], content_type: 'product'});
 }
 function bandcampClick() {
@@ -21,4 +21,7 @@ function twitterClick() {
 }
 function youtubeClick() {
     fbq('track', 'ViewContent', {content_ids: ['Youtube'], content_type: 'product'});
+}
+function facebookClick() {
+    fbq('track', 'ViewContent', {content_ids: ['Facebook'], content_type: 'product'});
 }
