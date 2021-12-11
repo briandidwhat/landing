@@ -7,6 +7,9 @@ function applemusicClick() {
 function youtubeMusicClick() {
     fbq('track', 'ViewContent', {content_ids: ['Youtube Music'], content_type: 'product'});
 }
+function amazonMusicClick() {
+    fbq('track', 'ViewContent', {content_ids: ['Amazon Music'], content_type: 'product'});
+}
 function tidalClick() {
     fbq('track', 'ViewContent', {content_ids: ['Tidal'], content_type: 'product'});
 }
