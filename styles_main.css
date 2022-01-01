@@ -12,44 +12,89 @@ body {
 
 .mainframe {
     z-index: 1;
-    margin-top:3vh;
-    margin-bottom:3em;
-    padding-top:3vh;
+    margin-top:1.5vh;
+    margin-bottom:1em;
     text-align:center;
 }
 
-.avi {
-    width:9em;
-    height:9em;
-    border-radius:50%;
-    -moz-border-radius:50%;
-    -webkit-border-radius:50%;
-    box-shadow: 0.1em 0.1em 1em 0.01em rgba(0, 0, 0, 0.3);
-    transition: 0.3s ease-in-out;
-    margin-bottom:0.6vh;
+.topbox {
+    width:100%;
+    background:white;
+    position:sticky;
+    top:0;
+    z-index:100;
 }
 
-.avi:hover {
-    box-shadow: 0.1em 0.1em 1.7em 0.03em rgba(0, 0, 0, 0.3);
+.headerimg {
+    width:26rem;
+    margin:auto;
+    padding:0;
+    text-align:center;
+    max-width:95%;
 }
 
-h1 span:hover {
-    text-shadow: none;
+.navbar {
+    margin:auto;
+    padding:0;
+    width:48vh;
+    max-width:90%;
+    height:3.6em;
+    margin-bottom:1%;
 }
+
+.navbar ul {
+    display:block;
+    list-style-type: none;
+    width:95%;
+    height:100%;
+    margin:auto;
+    padding:0;
+    text-align:center;
+    margin-bottom:0;
+    padding-bottom:0;
+}
+
+.navbar ul li {
+    display:block;
+    float:left;
+    text-align:center;
+    margin:auto;
+    width:30%;
+}
+
+.navbar ul li a {
+    display:block;
+    text-align:center;
+    line-height: 250%;
+    font-size:1.4em;
+    text-decoration: underline 0.03em rgba(0,0,0,0);
+    color:black;
+    transition: 0.2s ease-out;
+    transition: text-decoration-color 400ms ease-out;
+    letter-spacing: 0.1em;
+}
+
+.navbar ul li:hover a {
+    opacity:0.9;
+    text-decoration-color: rgba(0,0,0,0.9);
+}
+
 
 .verticallinks {
     display:table;
     list-style-type: none;
     margin: 0 auto;
     padding: 0em;
-    background-color:rgba(15,15,15,0.9);
-    box-shadow: 0.3em 0.8em 2em 0.0001em rgba(0, 0, 0, 0.5);
-    width: 95vmin;
+    background-color:rgb(12,12,12);
+    width: 90vmin;
+    margin-top:1.2em;
+    margin-bottom:2em;
 }
 
 .verticallinks li {
     padding:0em;
     padding-top:0;
+    padding-bottom:0.2em;
 }
 
 .verticallinks li a {
@@ -57,10 +102,10 @@ h1 span:hover {
     display: block;
     color: white;
     text-decoration: none;
-    background-color:rgb(34, 34, 34);
+    background-color:rgb(19, 19, 19);
     letter-spacing: 0.2em;
     font-weight: bold;
-    height:4em;
+    height:5em;
     transition: 0.25s ease-out;
     position:relative;
     margin:auto;
@@ -80,7 +125,6 @@ h1 span:hover {
     width:9em;
 }
 
-
 .verticallinks li a iframe {
     vertical-align:middle;
     position:absolute;
@@ -93,7 +137,7 @@ h1 span:hover {
 }
 
 .verticallinks li:hover a {
-    background-color:rgba(25, 25, 25, 0.5);
+    background-color:rgb(22,22,22);
     box-shadow: 0.1em 0.1em 1em 0.01em rgba(0, 0, 0, 0.2);
 }
 
@@ -102,8 +146,7 @@ h1 span:hover {
 }
 
 .verticallinks:hover li:not(:hover) a {
-    filter: blur(0.08em);
-    opacity:0.6;
+    filter: blur(0.2em) brightness(75%);
 }
 
 .subtext {
@@ -120,7 +163,7 @@ h1 span:hover {
     list-style-type: none;
     padding: 0em;
     margin: 0 auto;
-    margin-top: 3vh;
+    margin-top: 4vh;
 }
 
 .socialicons li {
@@ -160,3 +203,4 @@ h1 span:hover {
 .footer:hover {
     opacity:0.17;
 }
+
