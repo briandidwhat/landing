@@ -73,7 +73,6 @@ body {
 }
 
 .navbar ul li:hover a {
-    opacity:0.9;
     text-decoration: underline;
 }
 
