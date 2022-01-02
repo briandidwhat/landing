@@ -67,16 +67,14 @@ body {
     text-align:center;
     line-height: 250%;
     font-size:1.4em;
-    text-decoration: underline 0.03em rgba(0,0,0,0);
+    text-decoration: none;
     color:black;
-    transition: 0.2s ease-out;
-    transition: text-decoration-color 400ms ease-out;
     letter-spacing: 0.1em;
 }
 
 .navbar ul li:hover a {
     opacity:0.9;
-    text-decoration-color: rgba(0,0,0,0.9);
+    text-decoration: underline;
 }
 
 
