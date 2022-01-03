@@ -21,7 +21,6 @@
                 </ul>
             </div>
         </div>
-        <script src="event_scripts.js"></script>
         <ul class="verticallinks">
             <li><a onclick="spotifyClick()" href="https://open.spotify.com/artist/12fCImVE5rBXmeZToMVY7h?si=nCKp5QVfStCDVqwaN0UDQw" target="_blank" id="spotify"><img class="a" src="spotify.webp"/></a></li>
             <li><a onclick="applemusicClick()" href="https://music.apple.com/us/artist/notbrian/1554667847" target="_blank" id="apple_music"><img class="a" src="apple-music.webp"></a></li>
@@ -53,22 +52,6 @@
         src="https://www.facebook.com/tr?id=435624851406120&ev=PageView&noscript=1"
     /></noscript>
     <!-- End Facebook Pixel Code -->
-    <!-- Spotify Follow Code -->
-    <script type="text/javascript">
-        window.config = {"clientId":"97ff18111c294e2581de2db4e5d7f302","accountsHost":"https://accounts.spotify.com","apiBaseUrl":"https://api.spotify.com"};
-        window.config.redirectUri = 'https://open.spotify.com/follow/1/callback';
-    </script>
-    <script src="https://open.scdn.co/cdn/build/follow/vendor~follow.36123b2a.js"></script>
-    <script src="https://open.scdn.co/cdn/build/follow/follow.353e5a2b.js"></script>
-    <script type="text/javascript">
-        SP.FollowButton.init({
-            'theme': 'light',
-            'show-count': 0,
-            'size': 'basic',
-            'type': 'artist',
-            'id': '12fCImVE5rBXmeZToMVY7h'
-        });
-    </script>
-    <!-- End of Spotify Follow Code -->
+    <script src="event_scripts.js"></script>
 </body>
 </html>
