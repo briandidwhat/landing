@@ -6,14 +6,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="theno_cover.ico"/>
+    <!-- Event snippet for Music Click conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-10975763919/daoRCLrKldsDEM-70_Eo',
+          'event_callback': callback
+      });
+      return false;
+    }
+    </script>    
 </head>
+<!-- Global site tag (gtag.js) - Google Ads: 10975763919 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-10975763919"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-10975763919');
+</script>
 <body>
     <div class="mainframe">
         <div class="topbox">
             <a href="https://notbrian.com/"><img class="headerimg" src="notbrian_title_svg.svg"/></a>
         </div>
         <div class="box">
-            <a onclick="spotifyClick()" href="https://open.spotify.com/album/09vZCz61WCXkZwnaSKHNnq?si=HPSVqgOhQKSGm8PmAYMQ6g" target="_blank" class="musiccover"><img id="music" src="theno_cover.webp"/></a>
+            <a onclick="spotifyClick();gtag_report_conversion()" href="https://open.spotify.com/album/09vZCz61WCXkZwnaSKHNnq?si=HPSVqgOhQKSGm8PmAYMQ6g" target="_blank" class="musiccover"><img id="music" src="theno_cover.webp"/></a>
             <!--<span style="background:white;position:absolute;top:40%;left:50%;z-index:500;font-size:4vh;color:black;font-family: 'Courier New', Courier, monospace;transform:rotate(-10deg);font-weight: 800;">&nbsp;4.28.22&nbsp;</span>-->
             <div class="song">
                 <h1 class="songtitle">The No</h1>
@@ -21,10 +46,10 @@
             </div>
             <div class="linkbox">
                 <ul class="verticallinks">
-                    <li><a onclick="spotifyClick()" href="https://open.spotify.com/album/09vZCz61WCXkZwnaSKHNnq?si=HPSVqgOhQKSGm8PmAYMQ6g" target="_blank"><img class="a" src="spotify.webp"></a></li>
-                    <li><a onclick="applemusicClick()" href="https://music.apple.com/us/album/the-no-ep/1635794342" target="_blank"><img class="a" src="apple-music.webp"></a></li>
-                    <li><a onclick="youtubeMusicClick()" href="https://www.youtube.com/watch?v=AWOnTyy1Cic&list=OLAK5uy_niTJI5rDGFHPLWzSsL_DxbJQxJOfROhe0" target="_blank"><img class="a" src="youtube.webp"></a></li>
-                    <li style="padding-bottom:0em;"><a onclick="bandcampClick()" href="https://notbrian.bandcamp.com/album/the-no" target="_blank"><img class="a" src="bandcamp.webp"></a></li>
+                    <li><a onclick="spotifyClick();gtag_report_conversion()" href="https://open.spotify.com/album/09vZCz61WCXkZwnaSKHNnq?si=HPSVqgOhQKSGm8PmAYMQ6g" target="_blank"><img class="a" src="spotify.webp"></a></li>
+                    <li><a onclick="applemusicClick();gtag_report_conversion()" href="https://music.apple.com/us/album/the-no-ep/1635794342" target="_blank"><img class="a" src="apple-music.webp"></a></li>
+                    <li><a onclick="youtubeMusicClick();gtag_report_conversion()" href="https://www.youtube.com/watch?v=AWOnTyy1Cic&list=OLAK5uy_niTJI5rDGFHPLWzSsL_DxbJQxJOfROhe0" target="_blank"><img class="a" src="youtube.webp"></a></li>
+                    <li style="padding-bottom:0em;"><a onclick="bandcampClick();gtag_report_conversion()" href="https://notbrian.bandcamp.com/album/the-no" target="_blank"><img class="a" src="bandcamp.webp"></a></li>
                 </ul>
             </div>
         </div>
