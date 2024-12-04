@@ -8,6 +8,7 @@ body {
     padding: 0;
     text-align: center;
     letter-spacing: 0.08em;
+    background:rgb(198, 31, 45);
 }
 
 .mainframe {
@@ -15,11 +16,12 @@ body {
     margin-top:1.5vh;
     margin-bottom:1em;
     text-align:center;
+    background:rgb(198, 31, 45);
 }
 
 .topbox {
     width:100%;
-    background:white;
+    background:rgb(198, 31, 45);
     position:sticky;
     top:0;
     z-index:100;
@@ -42,6 +44,7 @@ body {
     height:3.6em;
     margin-bottom:1%;
     padding-left:1%;
+    font-family:Georgia, Times, 'Times New Roman', serif;
 }
 
 .navbar ul {
@@ -71,7 +74,7 @@ body {
     line-height: 250%;
     font-size:1.4em;
     text-decoration: none;
-    color:black;
+    color:white;
     letter-spacing: 0.1em;
 }
 
@@ -200,5 +203,19 @@ body {
 
 .footer:hover {
     opacity:0.17;
+}
+
+.signup {
+    font-family:Georgia, Times, 'Times New Roman', serif;
+    padding-top:0.5em;max-width:100%;width:50vh;margin:auto;
+    color:white;
+}
+
+.signupbutton {
+    padding-top:15px;padding-bottom:25px;font-size:0;width:100%;margin:auto;height:20px;
+}
+
+.signupfooter {
+    font-size:0.1+1.3vmax;margin:auto;display:block;
 }
 
