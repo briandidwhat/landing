@@ -39,7 +39,7 @@ body {
 .navbar {
     margin:auto;
     padding:0;
-    width:48vh;
+    width:70vh;
     max-width:90%;
     height:3.6em;
     margin-bottom:1%;
@@ -65,7 +65,7 @@ body {
     float:left;
     text-align:center;
     margin:auto;
-    width:30%;
+    width:20%;
 }
 
 .navbar ul li a {
