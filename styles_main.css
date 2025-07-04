@@ -172,13 +172,14 @@ body {
 .socialicons li {
     display: inline-block;
     padding:0em;
-    padding-right:3vmin;
-    padding-left:3vmin;
+    padding-right:4vmin;
+    padding-left:4vmin;
     margin-left: 0;
     margin-right: 0;
-    padding-bottom:0.5em;
-    padding-top:0.5em;
+    padding-bottom:3em;
+    padding-top:1em;
     width:2em;
+    margin-top:2.5vh;
 }
 
 .socialicons li a {
