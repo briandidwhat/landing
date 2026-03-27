@@ -24,56 +24,65 @@ body {
 .topbox {
     width:100%;
     background:rgb(255, 255, 255);
-    color:white;
+    color:rgb(0, 0, 0);
     position:sticky;
     top:0;
     z-index:100;
 }
 
 .headerimg {
-    max-width:50%;
-    max-height:50%;
-    margin:0;
+    width:26rem;
+    margin:auto;
     padding:0;
     text-align:center;
-    padding-left:5%;
+    max-width:95%;
 }
 
 .navbar {
-    display:inline-block;
+    margin:auto;
     padding:0;
-    width:28vh;
+    width:65vh;
     max-width:90%;
-    font-family:Arial, Helvetica, sans-serif;
-    color:black;
-    vertical-align: top;
-    padding-left:5%;
-    padding-top:3%;
-    text-align: left;
+    height:3.6em;
+    margin-bottom:1%;
+    font-family:Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
 }
 
 .navbar ul {
+    display:block;
     list-style-type: none;
-    width:80%;
-    margin:0;
+    height:100%;
+    width:100%;
+    margin:auto;
     padding:0;
-    color:black;
+    text-align:center;
+    margin-bottom:0;
+    padding-bottom:0;
 }
 
 .navbar ul li {
-    margin:0;
-    padding:0;
-    padding-top: 5%;
-    color:black;
+    display:block;
+    float:left;
+    text-align:center;
+    margin:auto;
+    background-color:white;
+    width:50%;
 }
 
 .navbar ul li a {
+    display:block;
+    text-align:center;
+    line-height: 250%;
     font-size:1.4em;
     text-decoration: none;
     color:rgb(0, 0, 0);
     letter-spacing: 0.1em;
 }
 
+.navbar ul li:hover {
+    background-color: rgb(209, 209, 209);
+}
 .navbar ul li:hover a {
     text-decoration: underline;
 }
